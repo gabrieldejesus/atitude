@@ -1,0 +1,112 @@
+/*================================================== HEADER ==================================================*/
+/*Tarja de Campeão*/
+.tarja {
+    top:28px;
+    left:-48px;
+    width:200px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    position:fixed;
+    text-align:center;
+    transform:rotate(-45deg);
+    opacity:0.8;
+    background-color:var(--yellow-color);
+}
+.tarja a {
+    color:#FFF;
+    font-size:13px;
+    line-height:20px;
+    text-decoration:none;
+    text-shadow:0px 0px 6px #414141c0;
+}
+header {
+    height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.logo,
+.menu,
+.menu nav ul {
+    display:flex;
+    align-items:center;
+    line-height:0;
+}
+.menu nav a {
+    font-size:18px;
+    font-weight:400;
+    color:var(--title-color);
+    margin-left:40px;
+}
+.active,
+.menu nav a:hover {
+    padding-bottom:10px;
+    color:var(--primary-color);
+    border-bottom:2px solid var(--primary-color);
+}
+/*================================================== BANNER ==================================================*/
+main {
+    height:calc(100vh - 72px); /* Tela total do dispositivo que estiver acessando menos os 72px do header */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0px 5px 20px #F2F2F2;
+}
+.banner-illustration img{
+    max-height:400px;
+}
+.banner-content {
+    display:flex;
+}
+.banner-content h1 {
+    margin:0;
+    font-size:60px;
+    font-weight:300;
+    line-height:80px;
+    max-width:620px;
+}
+.banner-content strong {
+    color:var(--primary-color);
+    font-weight:400;
+}
+.banner-content p {
+    font-size:18px;
+    font-weight:300;
+    line-height:26px;
+    margin-top:39px;
+    max-width:700px;
+}
+.banner-menu {
+    display:flex;
+    justify-content:center;
+    margin-top:39px;
+}
+.banner-menu--patient,
+.banner-menu--doctor {
+    width:250px;
+    height:130px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    background-color:var(--primary-color);
+}
+.banner-menu--doctor:last-child { /*Selecionando o ultimo elemento e dando um margin-left*/
+    margin-left:20px;
+}
+.banner-menu--patient:hover,
+.banner-menu--doctor:hover {
+    transition:0.3s;
+    background-color:#005AAE;
+}
+.banner-menu--patient label,
+.banner-menu--doctor label{
+    color:#FFF;
+    font-size:18px;
+    font-weight:300;
+    margin-top:10px;
+}
+/*================================================== ABOUT ==================================================*/
