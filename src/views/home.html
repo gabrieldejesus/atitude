@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Atitude</title>
@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">  <!-- Font -->
 </head>
 <body>
-<!--================================================== HEADER ==================================================-->
 <!--Tarja de Campeão-->
     <div class="tarja column">
         <a href="https://www.hackatrouble.com.br/premiados" target="_blank">PRIMEIRO LUGAR</a><br>
         <a href="https://www.hackatrouble.com.br/premiados" target="_blank">NA HACKATROUBLE</a>
     </div>
+<!--================================================== HEADER =================================================-->
     <header>
         <div class="container">
             <div class="logo">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </header>
-<!--================================================== BANNER ==================================================-->
+<!--================================================== BANNER =================================================-->
     <main>
         <div class="container">
             <div class="banner-illustration"><img src="/public/assets/undraw_real_time_collaboration_c62i.webp" alt="Imagem a esquerda mostrando médico e paciente conversando via internet"></div>
@@ -58,7 +58,130 @@
     </main>
 <!--================================================== ABOUT ==================================================-->
     <section id="about">
-
+        <div class="container">
+            <div class="about-illustration"><img src="/public/assets/about-illustration.webp" alt="Pessoas construindo um sistema"></div>
+            <div class="about-content column">
+                <h2>O programa Atitude foi criado para auxiliar médicos e pacientes.</h2>
+                <p>
+                    Através da plataforma, o paciente ira passar por uma triagem informando seus dados e seus 
+                    sintomas. Essas informações serão passadas para os medicos que estarão prontos para 
+                    atende-los, diretamente de casa. A partir dai, o paciente sera encaminhado para um medico, via 
+                    chat, para que o atendimento possa ser feito. Todas as informações dos médicos como a 
+                    graduação, a especialização e o CRM estarão disponiveis para que o paciente sinta ainda mais 
+                    segurança na hora de utilizar a plataforma!
+                </p>
+            </div>
+        </div>
     </section>
+<!--================================================== SERVICES ===============================================-->
+    <section id="services">
+        <div class="container">
+            <div class="services-headline">
+                <h2>Conheça alguns de nossos serviços</h2>
+                <p>
+                    O Atitude é um programa que funciona em dois 
+                    passos: primeiro o paciente passa por uma triagem 
+                    que identificara suas necessidades e seu sintoma e 
+                    apos isso, ele é encaminhado na mesma hora para 
+                    um chat virtual para uma consulta com o medico. 
+                    Os medicos cadastrados no programa são 
+                    totalmente voluntários e com diploma e com CRM 
+                    reconhecidos, para dar mais segurança aos pacientes. 
+                </p>
+            </div>
+            <div class="services-area">
+                <div class="services-item">
+                    <div class="services-img"><img src="/public/assets/patient-screening.webp"/></div>
+                    <div class="services-title"><h3>TRIAGEM DE PACIENTES</h3></div>
+                    <div class="services-desc">
+                        <p>
+                            Ao acessar o atitude, os pacientes 
+                            passam por uma triagem através de 
+                            perguntas para identificar os sintomas, 
+                            que medirão o grau de necessidade e a 
+                            probabilidade de ter a COVID-19. A partir 
+                            dai, o paciente será encaminhado para 
+                            um atendimento via chat com o medico 
+                            mais próximo.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-img"><img src="/public/assets/chat.webp"/></div>
+                    <div class="services-title"><h3>ATENDIMENTO VIA CHAT</h3></div>
+                    <div class="services-desc">
+                        <p>
+                            Os atendimentos serão feitos via chat, já
+                            que estamos em tempo de quarentena,
+                            para evitar que o virus seja propagado. O 
+                            teleatendimento é super seguro, eficaz, e 
+                            no conforto da sua casa, com medico 
+                            altamente qualificados e prontos para 
+                            te ajudar e tirar duvidas.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-img"><img src="/public/assets/help.webp"/></div>
+                    <div class="services-title"><h3>AJUDA E SOLUÇÕES</h3></div>
+                    <div class="services-desc">
+                        <p>
+                            O Atitude foi desenvolvido para ajudar no 
+                            combate a crise do Coronavirus que se 
+                            espalhou pelo mundo todo, atraves 
+                            de uma alternativa mais segura - sem 
+                            contato fisico entre pessoas - porem tão 
+                            eficiente quanto uma consulta presencial.
+                        </p> 
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-img"><img src="/public/assets/information.webp"/></div>
+                    <div class="services-title"><h3>INFORMAÇÕES</h3></div>
+                    <div class="services-desc">
+                        <p>
+                            Caso você, paciente ou médico 
+                            colaborador, precise de mais 
+                            informações ou queira tirar dúvidas sobre 
+                            o funcionamento do programa Atitude, 
+                            entre em contato conosco através de
+                            nossos canais e de nosso email.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--==================================================== HELP =================================================-->
+    <section id="help">
+        <div class="container">
+            <h2>Entre em contato conosco agora mesmo!</h2>
+            <p>
+                Este é o seu canal direto com nossa equipe.<br>
+                Alternativamente, você também pode enviar um e-mail para:<br>
+                <strong>suporte@atitude.com.br</strong><br>
+                Estamos a sua total disposição.
+            </p>
+            <form action="" class="column">
+                <div class="form-headline">
+                    <label for="email">Seu email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button>Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+<!--==================================================== HELP =================================================-->
 </body>
 </html>
