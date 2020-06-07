@@ -1,7 +1,7 @@
-# 🏆 Hackatrouble 
-# TIME 17 – ATITUDE - ATENDIMENTO MÉDICO A DISTÂNCIA
+🏆 Hackatrouble 
+# Time 17 – Atitude - Distance medical care
 
-# PROJETO ATITUDE
-- O que é ?
+# Project: Atitude
+- What is?
 
-O programa Atitude foi criado para fazer a ponte entre médicos e pacientes, e auxilia-los a ter um atendimento medico de qualidade e de maneira remota durante a quarentena, evitando o contato físico e a propagação da COVID-19. O site é simples, dinâmico e eficaz, com uma linguagem acessível a todos os públicos, e tem o objetivo de levar o acesso a todos que precisem utilizar dos serviços do programa sem sair de casa! O paciente ira passar por uma triagem informando seus dados e seus sintomas, principalmente para identificar a presença do Coronavirus. Essas informações serão passadas para os médicos que estarão prontos para atende-los, diretamente de casa. Todas as informações dos médicos como a graduação, a especialização e o CRM estarão disponíveis para que o paciente sinta ainda mais segurança na hora de utilizar a plataforma!
+The Atitude program was created to bridge the gap between doctors and patients, and helps them to have quality medical care and remotely during quarantine, avoiding physical contact and the spread of COVID-19. The website is simple, dynamic and effective, with a language accessible to all audiences, and aims to bring access to everyone who needs to use the program's services without leaving home! The patient will undergo a screening informing his data and his symptoms, mainly to identify the presence of the Coronavirus. This information will be passed on to doctors who will be ready to assist you, directly from home. All information from doctors such as graduation, specialization and CRM will be available so that the patient feels even more secure when using the platform!
