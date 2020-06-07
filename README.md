@@ -1,5 +1,5 @@
-🏆 Hackatrouble 
-# Time 17 – Atitude - Distance medical care
+🏆 First place in the Hackatrouble 
+# Atitude - Distance medical care
 
 # Project: Atitude
 - What is?
