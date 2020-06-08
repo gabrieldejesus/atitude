@@ -1,26 +1,4 @@
 /*================================================== HEADER ==================================================*/
-/*Tarja de Campeão*/
-.tarja {
-    top:28px;
-    left:-48px;
-    width:200px;
-    height:50px;
-    display:flex;
-    justify-content:center;
-    position:relative;
-    position:fixed;
-    text-align:center;
-    transform:rotate(-45deg);
-    opacity:0.8;
-    background-color:var(--yellow-color);
-}
-.tarja a {
-    color:#FFF;
-    font-size:13px;
-    line-height:20px;
-    text-decoration:none;
-    text-shadow:0px 0px 6px #414141c0;
-}
 header {
     height:72px;
     display:flex;
@@ -43,8 +21,23 @@ header {
 .active,
 .menu nav a:hover {
     padding-bottom:10px;
+    transition:all ease 0.3s;
     color:var(--primary-color);
     border-bottom:2px solid var(--primary-color);
+}
+/*Menu mobile*/
+.menuMobile {
+    cursor:pointer;
+    display:none;
+    flex-direction:column;
+    width:40px;
+    height:28px;
+    margin-top:16px;
+    margin-bottom:16px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image:url('../assets/menuMobile.png')
 }
 /*================================================== BANNER ==================================================*/
 main {
@@ -99,7 +92,7 @@ main {
 }
 .banner-menu--patient:hover,
 .banner-menu--doctor:hover {
-    transition:0.3s;
+    transition:all ease 0.3s;
     background-color:#005AAE;
 }
 .banner-menu--patient label,
@@ -182,7 +175,7 @@ main {
 }
  /*Efeito*/
 .services-item:hover {
-    transition:0.3s;
+    transition:all ease 0.3s;
     box-shadow:0px 0px 20px #d1d1d1;
     transform:translateY(10px);
 }
@@ -281,7 +274,7 @@ form button {
     background-color:var(--primary-color);
 }
 form button:hover {
-    transition:0.3s;
+    transition:all ease 0.3s;
     background-color:#005AAE;
 }
 /*==================================================== FOOTER ===============================================*/
@@ -346,4 +339,206 @@ footer {
     color:#8D8D8D;
     font-size:15px;
     font-weight:300;
+}
+/*==================================================== RESPONSIVIDADE ===============================================*/
+@media (max-width:1368px) {
+    .container {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .banner-content,
+    .about-content {
+        margin-left:40px;
+    }
+    .banner-content h1 {
+        max-width:none;
+        font-size:50px;
+        line-height:70px;
+    }
+    .banner-content p {
+        max-width:none;
+        margin-top:50px;
+    }
+}
+@media (max-width:1110px) {
+    .banner-illustration img,
+    .about-illustration img {
+        max-width:350px;
+    }
+    #services .container {
+        flex-direction:column;
+    }
+    .services-headline {
+        text-align:center;
+        align-items:center;
+    }
+    .services-headline h2,
+    .services-headline p {
+        max-width:none;
+    }
+}
+@media (max-width:960px) {
+    .banner-illustration {
+        display:none;
+    }
+    .banner-content {
+        margin-left:0px;
+    }
+    .banner-content h1,
+    .banner-content p {
+        text-align:center;
+    }
+    .about-illustration img {
+        max-width:280px;
+    }
+}
+@media (max-width:700px) {
+    .menuMobile {
+        display:flex;
+    }
+    .menu nav ul {
+        align-items:flex-start;
+    }
+    nav ul {
+        display:none;
+        justify-content:center;
+        flex-direction:column;
+        position:absolute;
+        top:40px;
+        right:0;
+        width:50%;
+        border-radius:6px 0px 0px 6px;
+        background-color:#FFF;
+        box-shadow:0px 4px 5px #CECECE;
+    }
+    .menu nav a {
+        margin-left:0px;
+        margin-right:0px;
+        line-height:50px;
+    }
+    .banner-menu--patient, .banner-menu--doctor {
+        width:230px;
+    }
+    .banner-content, 
+    .about-content {
+        margin-left:0px;
+    }
+    #about .container {
+        align-items:center;
+        flex-direction:column;
+    }
+    .about-content h2,
+    .about-content p {
+        max-width:auto;
+        text-align:center;
+    }
+    #help h2 {
+        text-align:center;
+    }
+    #help label {
+        margin-right:0;
+        margin-bottom:10px;
+    }
+    .form-headline {
+        align-items:flex-start;
+        justify-content:center;
+        flex-direction:column;
+        margin-bottom:0px;
+    }
+    .form-headline input[type="email"] {
+        margin-right:0;
+    }
+    .form-headline input[type="email"], 
+    .form-headline select {
+        width:420px;
+        margin-bottom:30px;
+    }
+    form textarea {
+        max-width:420px;
+        min-width:420px;
+        max-height:200px;
+        min-height:200px;
+    }
+    footer {
+        height:auto;
+    }
+    .footer-content {
+        flex-direction:column;
+    }
+    .footer-social {
+        margin-bottom:40px;
+    }
+}
+@media (max-height:700px) {
+    main {
+        height:800px;
+    }
+}
+@media (max-width:500px) {
+    .container {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    main {
+        height:700px;
+    }
+    .banner-content h1 {
+        font-size:35px;
+        line-height:45px;
+    }
+    .banner-content p {
+        margin-top:10px;
+    }
+    .banner-menu {
+        margin-top:20px;
+        align-items:center;
+        flex-direction:column;
+    }
+    .banner-menu--doctor:last-child {
+        margin-top:20px;
+        margin-left:0px;
+    }
+    .banner-menu--patient, 
+    .banner-menu--doctor {
+        width:200px;
+        height:120px;
+    }
+    .banner-menu--patient label, 
+    .banner-menu--doctor label {
+        font-size:16px;
+    }
+    #about h2,
+    #services h2,
+    #help h2 {
+        font-size:30px;
+    }
+    .services-item {
+        height:auto;
+        min-width:290px;
+        max-width:290px;
+    }
+    .form-headline input[type="email"], 
+    .form-headline select {
+        width:290px;
+    }
+    form textarea {
+        max-width:290px;
+        min-width:290px;
+    }
+    footer {
+        margin-top:100px;
+    }
+    .footer-copy {
+        font-size:14px;
+    }
+}
+@media (max-width:400px) {
+    main {
+        height:800px;
+    }
+}
+@media (max-width:330px) {
+    main {
+        height:680px;
+    }
 }
