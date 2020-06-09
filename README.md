@@ -4,7 +4,7 @@
 > The Atitude program was created to bridge the gap between doctors and patients, and helps them to have quality medical care and remotely during quarantine, avoiding physical contact and the spread of COVID-19.
 
 
-![](social-preview-atitude.png)
+![](assets/social-preview-atitude.png)
 
 
 ## What is?
