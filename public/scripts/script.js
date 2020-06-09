@@ -8,3 +8,17 @@ window.onload = function() {
         }
     });
 };
+//=========================================================== MODAL PATIENT ============================================================
+function iniciaModalPatient(modalPatientID) {
+    const modalPatient = document.getElementById(modalPatientID);
+    if(modalPatient) {
+        modalPatient.classList.add('mostrar-modal-patient');
+        modalPatient.addEventListener('click', (e) => {
+            if(e.target.id == modalPatientID || e.target.className == 'fechar-modal-patient') {
+                modalPatient.classList.remove('mostrar-modal-patient');
+            }
+        });
+    }
+}
+const menuPatient = document.querySelector('.banner-menu--patient');
+menuPatient.addEventListener('click', () => iniciaModalPatient('modal-patient-login'));

@@ -340,6 +340,161 @@ footer {
     font-size:15px;
     font-weight:300;
 }
+/*=================================================== ANIMAÇÃO MODAL ===============================================*/
+/*Animação do modal*/
+    @keyframes modal {
+        /* De */
+        from {
+            opacity:0;
+            transform:translate3d(0, -60px, 0)/*Mudar posição do elemento*/
+        }
+        /* Para */
+        to {
+            opacity:1;
+            transform:translate3d(0, 0, 0)/*Mudar posição do elemento*/
+        }
+    }
+/*Executando animação*/
+    .mostrar-modal-patient .modal-patient {
+        animation:modal 0.3s;
+    }
+/*==================================================== MODAL PATIENT ===============================================*/
+.modal-patient-container {
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    z-index:3000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    background-color:#22222280;
+}
+.modal-patient {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:65%;
+    height:70%;
+    padding:20px;
+    min-width:310px;
+    border-radius:6px;
+    position:relative;
+    background-color:#FFF;
+}
+.modal-patient-container.mostrar-modal-patient {
+    display:flex;
+}
+.fechar-modal-patient {
+    top:-20px;
+    right:-20px;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    color:#FFF;
+    font-size:20px;
+    position:absolute;
+    border-radius:6px;
+    border:4px solid #FFF;
+    background-color:#262626;
+    box-shadow: 0px 0px 10px #22222270;
+}
+.modal-patient-illustration img{
+    height:300px;
+}
+.modal-patient-content {
+    display:flex;
+    margin-left:50px;
+}
+.modal-patient-content h2 {
+    margin:0;
+    color:var(--title-color);
+    font-size:26px;
+    font-weight:400;
+    line-height:28px;
+}
+.modal-patient-content strong {
+    color:var(--green-color);
+    font-weight:400;
+}
+.modal-patient-content p{
+    color:var(--text-color);
+    font-size:18px;
+    font-weight:300;
+    line-height:19px;
+    margin-top:20px;
+}
+form {
+    display:flex;
+    justify-content:center;
+}
+.form-title {
+    height:30px;
+    width:160px;
+    display:flex;
+    align-items:center;
+    color:#FFF;
+    font-size:16px;
+    font-weight:400;
+    margin-top:23px;
+    margin-bottom:17px;
+    padding-left:8px;
+    border-radius:4px;
+    background-color:var(--primary-color);
+}
+.form-item {
+    display:flex;
+    align-items:center;
+    margin-bottom:24px;
+}
+.form-item input[type="text"],
+.form-item input[type="date"] {
+    margin-left:4px;
+    outline:none;
+    border:0;
+    border-bottom:1px solid #111111;
+}
+.form-item input[type="text"] {
+    width:200px;
+    margin-right:10px;
+}
+.form-item input[type="date"] {
+    width:140px;
+}
+
+
+
+
+.form-options {
+    justify-content:space-between;
+    display:grid; /*Colocando display grid*/
+    grid-template-columns:200px 200px; /*Quantas colunas eu quero posso colocar pixel tbm*/
+    gap:17px; /*Separação dos elementos*/
+}
+.form-options label {
+    height:110px;
+    background-color:#BBB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*==================================================== RESPONSIVIDADE ===============================================*/
 @media (max-width:1368px) {
     .container {
