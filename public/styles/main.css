@@ -1,7 +1,7 @@
 /*================================================== MAIN ==================================================*/
 /*Variaveis de cores*/
 :root {
-    --title-color:#111;
+    --black-color:#111;
     --text-color:#5F5F5F;
     --primary-color:#2A7AF3;
     --red-color:#EA5455;
@@ -11,12 +11,13 @@
 /* Aplicar em todos os elementos */
 * {
     outline:none;
+    transition:all 0.3s;
     box-sizing:border-box;
     font-family:'Roboto', sans-serif;
 }
 /* Container geral */
 .container {
-    width:1366px;
+    width:1400px;
     display:flex;
     justify-content:space-between;
 }
@@ -36,11 +37,20 @@ ul {
 h1, h2, h3 {
     color:var(--title-color);
 }
+h2 {
+  font-size:34px;
+  font-weight:300;
+  line-height:40px;
+}
 /* Todos os elementos p */
 p {
     margin:0;
+    font-size:18px;
+    font-weight:300;
     color:var(--text-color);
 }
+
+
 /*================================================== NORMALIZE CSS ==================================================*/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
