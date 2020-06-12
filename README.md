@@ -1,4 +1,4 @@
-#### 🏆 _First place in the Hackatrouble_
+#### 🏆   _First place in the Hackatrouble_
 
 # Project: Atitude
 > The Atitude program was created to bridge the gap between doctors and patients, and helps them to have quality medical care and remotely during quarantine, avoiding physical contact and the spread of COVID-19.
