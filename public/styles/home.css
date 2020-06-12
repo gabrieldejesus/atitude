@@ -28,16 +28,29 @@ header {
     padding-bottom:12px;
     border-bottom:1px solid var(--primary-color);
 }
+/*Menu mobile*/
+.menuMobile {
+    width:40px;
+    height:28px;
+    display:none;
+    cursor:pointer;
+    margin-top:17px;
+    margin-bottom:17px;
+}
+.menuMobile img {
+    width:40px;
+    height:28px;
+}
 /*================================================== BANNER ==================================================*/
 main {
     display:flex;
-    height:calc(100vh - 72px);
-    box-shadow:0px 10px 10px #f2f2f262;
+    height:700px;
+    box-shadow:0px 10px 10px #f2f2f2c4;
 }
 #banner {
     display:flex;
     justify-content:center;
-    height:calc(100vh - 72px);
+    height:700px;
 }
 #banner .container {
     width:1285px;
@@ -94,6 +107,8 @@ main {
 }
 .banner-option--patient img,
 .banner-option--doctor img {
+    height:50px;
+    width:50px;
     margin-top:47px;
 }
 .banner-option--patient p,
@@ -110,7 +125,7 @@ main {
     display:flex;
     align-items:center;
     justify-content:center;
-    box-shadow:0px 10px 10px #f2f2f262;
+    box-shadow:0px 10px 10px #f2f2f2c4;
 }
 .about-left,
 .about-right {
@@ -170,6 +185,10 @@ main {
 .services-right--item:hover {
     transform:translateY(-30px);
 }
+.services-right--item img {
+    width:47px;
+    height:47px;
+}
 .services-right--item h3 {
     margin:0;
     font-size:19px;
@@ -225,6 +244,7 @@ form .form-item input[type="email"] {
 }
 form .form-item input[type="email"],
 form .form-item select {
+    outline:none;
     border:0;
     width:250px;
     font-size:20px;
@@ -310,4 +330,249 @@ footer p {
     background-color:#111;
 
 }
-/*============================================== RESPONSIVIDAD ===============================================*/
+/*============================================== RESPONSIVIDADE ==============================================*/
+@media (max-width:1400px) {
+    .container {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .banner-thumbnail img {
+        height:350px;
+    }
+    .banner-content h1 {
+        font-size:50px;
+        line-height:60px;
+        margin-bottom:20px;
+    }
+    footer .container{
+        width:1000px;
+        padding-left:0px;
+        padding-right:0px;
+    }
+}
+@media (max-width:1190px) {
+    .banner-content {
+        padding-left:20px;
+    }
+    #about h2,
+    #services h2,
+    #contact h2 {
+        font-size:30px;
+    }
+    .about-thumbnail img {
+        height:290px;
+    }
+    .banner-content h1 {
+        font-size:45px;
+        line-height:50px;
+        margin-bottom:15px;
+    }
+    .banner-content p {
+        margin-bottom:25px;
+    }
+    .banner-thumbnail img {
+        height:290px;
+    }
+    .service-left p {
+        max-width:300px;
+    }
+    .services-right--item {
+        max-width:340px;
+    }
+    footer .container{
+        width:1000px;
+        padding-left:0px;
+    }
+}
+@media (max-width:1050px) {
+    #banner .container {
+        justify-content:center;
+    }
+    .banner-left {
+        display:none;
+    }
+    .banner-content {
+        padding-left:0;
+        align-items:center;
+        justify-content:center;
+    }
+    .banner-content h1,
+    .about-right h2 {
+        max-width:none;
+        text-align:center;
+    }
+    .banner-content p,
+    .about-right p {
+        max-width:none;
+        text-align:center;
+    }
+    .banner-option--patient, 
+    .banner-option--doctor {
+        width:230px;
+    }
+    #about .container {
+        text-align:center;
+        flex-direction:column;
+    }
+    #about h2, 
+    #services h2, 
+    #contact h2 {
+        max-width:none;
+        text-align:center;
+        margin-bottom:15px;
+    }
+    #services {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    #services .container {
+        align-items:center;
+        flex-direction:column;
+    }
+    .service-left p {
+        max-width:none;
+        text-align:center;
+    }
+    .service-right {
+        margin-top:60px;
+    }
+    footer .container {
+        width:800px;
+    }
+}
+@media (max-width:800px) {
+    .service-right {
+        grid-template-columns:1fr;
+    }
+    .form-headline {
+        flex-direction:column;
+    }
+    .form-item {
+        margin-bottom:20px;
+    }
+    .form-headline {
+        margin-bottom:10px;
+    }
+    form .form-item input[type="email"] {
+        width:300px;
+        margin-right:0;
+    }
+    form .form-item select {
+        width:310px;
+    }
+    form .form-item textarea {
+        min-width:400px;
+        max-width:400px;
+    }
+    footer {
+        height:auto;
+    }
+    footer .container {
+        width:320px;
+        flex-direction:column;
+    }
+    .footer-left, 
+    .footer-right {
+        margin-bottom:30px;
+    }
+}
+@media (max-width:740px) {
+    .menuMobile {
+        display:flex;
+    }
+    .menu nav ul {
+        height:80px;
+        width:100%;
+        left:0;
+        margin-top:0px;
+        position:absolute;
+        display:none;
+        align-items:center;
+        justify-content:center;
+        background-color:#FFF;
+        box-shadow:0px 10px 10px #f2f2f2c4;
+    }
+    .menu a {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .banner-content h1, 
+    .about-right h2 {
+        font-size:33px;
+    }
+    .about-thumbnail img {
+        height:200px;
+    }
+}
+@media (max-height:700px) {
+    main {
+        height:700px;
+    }
+    .menu nav ul {
+        height:auto;
+        line-height:40px;
+        flex-direction:column;
+    }
+    .banner-content {
+        padding-top:50px;
+    }
+    #about {
+        height:auto;
+        padding-bottom:50px;
+    }
+    #about, #services {
+        padding-top:100px;
+    }
+}
+@media (max-width:562px) {
+    .container {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .menu nav ul {
+        height:auto;
+        line-height:40px;
+        flex-direction:column;
+    }
+    .banner-options {
+        flex-direction:column;
+    }
+    .banner-option--patient, 
+    .banner-option--doctor {
+        height:120px;
+    }
+    .banner-option--doctor {
+        margin-left:0px;
+        margin-top:10px;
+    }
+    .banner-option--patient img, 
+    .banner-option--doctor img {
+        margin-top:28px;
+    }
+    #about,
+    #services {
+        padding-top:200px;
+    }
+    .services-right--item {
+        height:420px;
+        max-width:300px;
+    }
+    form .form-item input[type="email"] {
+        width:208px;
+    }
+    form .form-item select {
+        width:222px;
+    }
+    form .form-item label, form .form-item select {
+        margin-left:0;
+    }
+    form .form-item textarea {
+        min-width:300px;
+        max-height:300px;
+    }
+    .footer-copy {
+        height:50px;
+        font-size:14px;
+        text-align:center;
+    }
+}
