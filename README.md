@@ -1,4 +1,4 @@
-#### 🏆   _First place in the Hackatrouble_
+#### 🏆 _First place in the Hackatrouble_
 
 # Project: Atitude
 
