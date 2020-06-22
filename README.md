@@ -27,7 +27,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contributing
 
-1. Fork it (<https://github.com/devgabrieldejesus/ccreceitas/fork>)
+1. Fork it (<https://github.com/devgabrieldejesus/atitude/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
