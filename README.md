@@ -18,7 +18,7 @@ The Atitude program was created to bridge the gap between doctors and patients, 
 
 ## Meta
 
-Gabriel de Jesus – [My portfolio](https://gabrieldesenvolvedor.com/) – contato@gabrieldesenvolvedor.com
+Gabriel de Jesus – [My portfolio](https://gabrieldesenvolvedor.com/) – oi@gabrieldesenvolvedor.com
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
